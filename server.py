@@ -30,7 +30,7 @@ def search():
     data = data_store[data_index]
     data.target = 8
     data.columns = [0, 1, 2, 3, 4, 5, 6, 7]
-    data.type = type
+    data.type = int(type)
     result, data = training(data_index)
     return json.dumps((result, data))
 

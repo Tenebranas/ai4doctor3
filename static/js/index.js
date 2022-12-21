@@ -37,9 +37,9 @@ reader.onloadend = () => {
     }
     if (header == false){
         let td = tr.insertCell();
-        td.innerHTML = '<div class="form-check"> <input type="radio" class="form-check-input" name="type" value=1'
+        td.innerHTML = '<div class="form-check"> <input type="radio" class="form-check-input" name="type" value="1"'
                 +'checked> <label class="form-check-label" for="radio1">Regression</label> </div><br>'
-                +'<div class="form-check"> <input type="radio" class="form-check-input" name="type" value=0'
+                +'<div class="form-check"> <input type="radio" class="form-check-input" name="type" value= "0"'
                 +'checked> <label class="form-check-label" for="radio1">Classification</label> </div>';
         td.style.background = '#FF0000'
     }else{
