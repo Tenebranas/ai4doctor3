@@ -23,14 +23,28 @@ reader.onloadend = () => {
         }
         else{
             if(col != null){
-                td.innerHTML = '<span>'+col+'<span><br>' + '<input class= "inputCheckbox" type="checkbox" value = '+col+' /> input<br>' +
-                 '<input class = "outputCheckbox" type="checkbox" value = '+col+' /> output';
+                td.innerHTML = '<span>'+col+'<span><br>' + '<input class= "inputCheckbox" type="checkbox" value = '+col
+                +' /> input<br>' +
+                '<div class="form-check"> <input type="radio" class="form-check-input" name="output" value='+col+
+                'checked> <label class="form-check-label" for="radio1">output</label> </div>'
+//                 '<input class = "outputCheckbox; form-check-input" type="radio" value = '+col+' /> output';
                 td.style.background = '#FF0000'
             }
             else
                 td.innerHTML = 'index';
                 td.style.background = '#FF0000'
         }
+    }
+    if (header == false){
+        let td = tr.insertCell();
+        td.innerHTML = '<div class="form-check"> <input type="radio" class="form-check-input" name="type" value=1'
+                +'checked> <label class="form-check-label" for="radio1">Regression</label> </div><br>'
+                +'<div class="form-check"> <input type="radio" class="form-check-input" name="type" value=0'
+                +'checked> <label class="form-check-label" for="radio1">Classification</label> </div>';
+        td.style.background = '#FF0000'
+    }else{
+     let td = tr.insertCell();
+        td.innerHTML =''
     }
     header = true;
   }
@@ -40,8 +54,9 @@ reader.onloadend = () => {
 function sendTrainRequest(){
     var input = getInput();
     console.log(input);
-    var output = getOutput();
+    var output = getOption('output');
     console.log(output);
+    var type = getOption('type');
     console.log(picker.files[0])
 
     var fd = new FormData();
@@ -49,6 +64,7 @@ function sendTrainRequest(){
     fd.append("file", picker.files[0]);
     fd.append("input", input);
     fd.append("output", output);
+    fd.append("type", type);
     $.ajax({
         url: '/training',
         method: "POST",
@@ -69,9 +85,9 @@ function sendTrainRequest(){
 }
 
 
-function getOutput(){
+function getOption(name){
     var outputValue = null;
-    var outputElements = document.getElementsByClassName('outputCheckbox');
+    var outputElements = document.getElementsByName(name);
     console.log(outputElements)
     for(var i=0; outputElements[i]; ++i){
           if(outputElements[i].checked){
@@ -81,6 +97,8 @@ function getOutput(){
     }
     return outputValue
 }
+
+
 
 function getInput(){
     var inputValue = [];

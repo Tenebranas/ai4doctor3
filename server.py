@@ -16,6 +16,7 @@ def search():
     print(request.values)
     input = request.values['input']
     output = request.values['output']
+    type = request.values['type']
     print(input, output)
     print(request.files)
     file = request.files['file']
@@ -29,7 +30,7 @@ def search():
     data = data_store[data_index]
     data.target = 8
     data.columns = [0, 1, 2, 3, 4, 5, 6, 7]
-    data.type = 0
+    data.type = type
     result, data = training(data_index)
     return json.dumps((result, data))
 
