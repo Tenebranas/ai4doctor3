@@ -13,7 +13,8 @@ function buildTable(){
         }
         let td = tr.insertCell();
         td.style="text-align: center"
-        td.innerHTML = ' <button  type="button" onclick= "" class="btn btn-dark" id ='+row[0]+'>select</button>';
+        td.innerHTML = '<button  type="button" onclick= "gotoPredictionPage(\''+row[0]+'\')" class="btn btn-dark" id ='
+        +row[0]+'>select</button>';
 
     }
 }
@@ -31,3 +32,4 @@ function setHeaders(){
 }
 
 buildTable();
+

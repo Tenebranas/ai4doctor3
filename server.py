@@ -1,18 +1,19 @@
 import os
 
-from flask import Flask,  request, redirect, url_for, render_template
+from flask import Flask, request, redirect, url_for, render_template
 from main import training, prediction, analyze_table, data_store
 import json
 
 app = Flask(__name__, template_folder='static/templates', static_folder='static')
 
+
 @app.route('/')
 def home():
     return render_template('index.html')
 
+
 @app.route('/training', methods=['POST'])
 def search():
-
     print(request.values)
     input = request.values['input']
     output = request.values['output']
@@ -36,5 +37,21 @@ def search():
 
 
 
+@app.route('/predict', methods = ['POST'])
+def predict():
+    data = request.json
+    print(data)
+
+    input = data['form']
+    output = data['output']
+    type = data['type']
+    algorithm = data['algorithm']
+
+    # You will call your function to run prediction
+    prediction = 'YOUR PREDICTION'
+
+    return prediction
+
+
 if __name__ == "__main__":
-    app.run(host= '0.0.0.0')
+    app.run(host='0.0.0.0')

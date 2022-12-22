@@ -26,7 +26,7 @@ reader.onloadend = () => {
                 td.innerHTML = '<span>'+col+'<span><br>' + '<input class= "inputCheckbox" type="checkbox" value = '+col
                 +' /> input<br>' +
                 '<div class="form-check"> <input type="radio" class="form-check-input" name="output" value='+col+
-                'checked> <label class="form-check-label" for="radio1">output</label> </div>'
+                ' checked> <label class="form-check-label" for="radio1">output</label> </div>'
 //                 '<input class = "outputCheckbox; form-check-input" type="radio" value = '+col+' /> output';
                 td.style.background = '#FF0000'
             }
@@ -74,8 +74,12 @@ function sendTrainRequest(){
          success: function(response){
             if (response != 0){
                 console.log(response)
-                window.location.pathname = "static/templates/result.html";
                 localStorage.setItem("response", response);
+                localStorage.setItem("input", input);
+                localStorage.setItem("output", output);
+                localStorage.setItem("type", type);
+                window.location.pathname = "static/templates/result.html";
+
             }else{
                 alert('An error occurred');
              }
@@ -111,3 +115,4 @@ function getInput(){
     }
     return inputValue;
 }
+
