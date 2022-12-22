@@ -96,7 +96,7 @@ def training(data_index):
         else:
             scores_automatic = cross_val_score(automatic_model, X, y, cv=5, scoring="neg_root_mean_squared_error")
         print("Automatic: %0.2f accuracy with a standard deviation of %0.2f" % (
-            scores_automatic.mean(), scores_automatic.std()))
+        scores_automatic.mean(), scores_automatic.std()))
         automatic_model.fit(X, y)
         final_models.append(automatic_model)
         output.append((name, scores_automatic.mean(), scores_automatic.std()))

@@ -1,6 +1,4 @@
-import os
-
-from flask import Flask, request, redirect, url_for, render_template
+from flask import Flask, request, render_template
 from main import training, prediction, analyze_table, data_store
 import json
 
@@ -36,21 +34,21 @@ def search():
     return json.dumps((result, data))
 
 
-
-@app.route('/predict', methods = ['POST'])
-def predict():
+@app.route('/predict', methods=['POST'])
+def do_prediction():
     data = request.json
     print(data)
 
-    input = data['form']
-    output = data['output']
-    type = data['type']
-    algorithm = data['algorithm']
+    input_data = data['form']  # a dictionary that contains the input data
+    output = data['output']  # the column name
+    type_model = data['type']  # classification or regression
+    algorithm = data['algorithm']  # the name of the algorithm to be used
 
-    # You will call your function to run prediction
-    prediction = 'YOUR PREDICTION'
+    # TODO
+    # You need to update this part, so you will call your function to run prediction
+    predict = 'YOUR PREDICTION'
 
-    return prediction
+    return predict
 
 
 if __name__ == "__main__":
