@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a702e42a-e05e-4212-af75-0b501aa146cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Iris.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/flexslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/ico.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/webhostinghub-glyphs.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/clients/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/clients/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/clients/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/clients/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/clients/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/quote/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/quote/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/quote/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/quote/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/quote/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/quote/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/slide/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/demo/slide/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/quote-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/team-bg-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/team-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/vid-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.flexslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.localscroll-1.2.7-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.mobilemenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.scrollTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/php/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/templates/app_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AI_backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.World Crime Index .csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app_index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/result.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NGC2NPJzjpZBtwawXq6xZu5aUl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a702e42a-e05e-4212-af75-0b501aa146cd" name="Changes" comment="" />
+      <created>1679280826172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679280826172</updated>
+      <workItem from="1679280826863" duration="69000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

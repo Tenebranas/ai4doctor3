@@ -1,12 +1,7 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 import pandas as pd
 from sklearn.compose import make_column_selector as selector
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
-from sklearn.linear_model import LinearRegression  # linear regression
+from sklearn.linear_model import LinearRegression #linear regression
 from sklearn.compose import ColumnTransformer
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
@@ -15,51 +10,43 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVR, SVC, NuSVC  # support vector regression
-from sklearn.linear_model import SGDRegressor  # stochastic gradient descent regression
+from sklearn.linear_model import SGDRegressor #stochastic gradient descent regression
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestClassifier, AdaBoostClassifier, \
     GradientBoostingClassifier
 from sklearn.linear_model import ElasticNet
 from sklearn.model_selection import cross_val_score
 from sklearn.tree import DecisionTreeClassifier
 
-
 class Learning_Data:
-    # override method
+    #override method
     def __init__(self):
         self.models = []
         self.target = 0
         self.columns = []
         self.data = pd.DataFrame()
         self.type = 0
-
-
 data_store = []
-
-
 def analyze_table(filepath):
-    df = pd.read_csv(filepath)
+    df=pd.read_csv(filepath)
     data = Learning_Data()
     data.data = df
     data_store.append(data)
-    data_index = len(data_store) - 1
+    data_index = len(data_store ) - 1
     return data_index, df.head(10), df.dtypes
-
-
-print(analyze_table("diabetes.csv"))
-
+#print(analyze_table("diabetes.csv"))
 
 def training(data_index):
     data = data_store[data_index]
     for c in data.data.columns:
         if data.data[c].dtype == "object":
             data.data[c] = data.data[c].astype("category")
-    target = data.data.columns[data.target]
-    y = data.data[target]
-    picked_columns = [data.data.columns[index] for index in data.columns]
-    X = data.data[picked_columns]
+    '''target = data.data.columns[data.target]'''
+    y = data.data[data.target.replace("checked","")]
+    '''picked_columns = [data.data.columns[index]for index in data.columns]'''
+    X = data.data[data.columns]
     regression_list = [SVR(), LinearRegression(), SGDRegressor(), GradientBoostingRegressor(), ElasticNet()]
     regression_names = ["Support Vector Regression", "Linear Regression", "Stochastic Gradient Descent Regression",
-                        "SGD with Gradient Boosting", "Elastic Net"]
+                   "SGD with Gradient Boosting", "Elastic Net"]
     classifications_list = [
         KNeighborsClassifier(3),
         SVC(kernel="rbf", C=0.025, probability=True),
@@ -108,23 +95,3 @@ def training(data_index):
 def prediction(filepath, model):
     to_predict = pd.read_csv(filepath)
     return model.predict(to_predict)
-
-#
-# data_index, _, _ = analyze_table("diabetes.csv")
-# data = data_store[data_index]
-# data.target = 8
-# data.columns = [0, 1, 2, 3, 4, 5, 6, 7]
-# data.type = 0
-# result, data = training(data_index)
-# print(result,data)
-# print(prediction("diabetes_test.csv", data_store[data_index].models[0]))
-# # homework:target_index - column index to predict, feature_indeces - column indeces to predict on
-# # type - 0 means classification
-# # type - 1 means regression
-# # 1. get a subset of df (X,y) containing only appropriate columns (based off Lab 2)
-# # 2. create the pipeline with the models that can process both text and numbers like in lab 3
-# # 3. perform cross-validation using different models like in lab 3
-# # 4. return a dict where the keys are model names and the values are accuracies
-#
-#
-# # test data sets around to see which work and which dont

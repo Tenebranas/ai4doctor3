@@ -12,10 +12,15 @@ picker.onchange = () => reader.readAsText(picker.files[0]);
 reader.onloadend = () => {
   table.innerHTML = "";
   let header = false;
+  let row_counter =0;
   for (let row of CSV.parse(reader.result)) {
+      if (row_counter>10) break;
+      row_counter+=1;
     let tr = table.insertRow();
 //    console.log(header);
 //    console.log(row);
+
+
     for (let col of row) {
         let td = tr.insertCell();
         if (header != false){ //

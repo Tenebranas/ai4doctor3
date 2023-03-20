@@ -1,34 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AI4Doctor</title>
-    <link rel="stylesheet" href="static/css/0-dummy.css">
 
-    <!-- (A) JS -->
-    <script defer src="static/js/csv.min.js"></script>
-    <script defer src="static/js/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta charset="utf-8" />	
+	<title>AI4Doctors - Easy to use general AI for professionals</title>
+		
+	<meta name="robots" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Bootstrap packages
-       Source: https://getbootstrap.com/docs/5.2/getting-started/introduction/-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+	<!--[if lt IE 9]>
+	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- This file is part of a site template for sale at themeforest.net.
+    See: http://themeforest.net/user/Dilipkumar
+    Copyright 2013 Dilip Kumar -->
 
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/foundation.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/ico.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/flexslider.css"/>
+
+	<!-- FAVICON-->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- Google Webfont -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- jQuery Files -->
+	<script type="static/js/jquery-1.8.3.min.js"></script>
+	<script type="static/js/jquery.flexslider.js"></script>
+	<script type="static/js/contact.js"></script>
+	<script type="static/js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="static/js/jquery.mobilemenu.js"></script>
+	<script type="static/js/jquery.scrollTo.js"></script>
+	<script type="static/js/jquery.nav.js"></script>
+	<script type="static/js/main.js"></script>
 
 </head>
 <body>
-<!-- (B) PICK CSV FILE -->
-<div class="d-grid gap-3">
-    <div class="mx-auto mt-5"> <h1> AI4Doctor</h1></div>
-    <div class="mx-auto mt-5"><input type="file" accept=".csv" id="demoPick"></div>
 
-    <!-- (C) GENERATE HTML TABLE HERE -->
-    <div class="mx-auto"><table id="demoTable" class="table table-striped"></table></div>
-    <div class="mx-auto mb-5" id="confirmedButton"> </div>
+<!-- Header section -->
+<header>
+	<div class="top-wrap">
+		<div class="row">
+			<div class="twelve columns">
+			
+				<!-- Logo content -->
+				<div class="four columns logo">
+					<h1><a href="#">AI4<span>Doctors</span></a></h1>
+				</div>
 
-</div>
+				<!-- Navmenu content -->
+				<div class="eight columns">
+					<ul class="top-nav">
+						<li class="current"><a href="#top">Home</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#review">Video</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#quote">Testimonials</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Header section -->
+
+<!-- Slider section -->
+<section id="top">
+	<div class="row">
+		<div class="twelve columns">
+			<div class="space90"></div>
+
+			<!-- Slider content -->
+			<div class="six columns">
+				<div id="main-slider" class="flexslider">
+					<ul class="slides">
+						<li><img src="static/demo/slide/1.png" alt="" /></li>
+						<li><img src="static/demo/slide/2.png" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Content right -->
+			<div class="six columns top-info">
+				<h3>EASY TO USE<span>GENERAL AI</span></h3>
+				<p>Powerful  AI to predict future models for your database. </p>
+				<div class="space50"></div>
+				<a class="btn" href="/app"><span></span>Test out <em>OUR APP</em></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Slider section -->
+
+<!-- Features/services section -->
+<section id="features">
+	<div class="row">
+		<div class="twelve columns">
+			<div class="four columns features-content">
+				<div class="ico" style="color:#2ecc71;"><i class="icon-resize"></i></div>
+				<div class="features-info">
+					<h4>Responsive</h4>
+					<p>Instantly receives results.</p>
+				</div>
+			</div>
+
+			<div class="four columns features-content">
+				<div class="ico" style="color:#3498db;"><i class="icon-form"></i></div>
+				<div class="features-info">
+					<h4>Multiple Algorithms</h4>
+					<p>Multiple methods to ensure your best results.</p>
+				</div>
+			</div>
+
+			<div class="four columns features-content">
+				<div class="ico" style="color:#9b59b6;"><i class="icon-heartsparkle"></i></div>
+				<div class="features-info">
+					<h4>Designed to perfection</h4>
+					<p>Designed to model after realistic and accurate results.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="twelve columns">
+			<div class="four columns features-content">
+				<div class="ico" style="color:#e67e22;"><i class="icon-code"></i></div>
+				<div class="features-info">
+					<h4>Privacy</h4>
+					<p>Zero cookies information would be public, everything is private. </p>
+				</div>
+			</div>
+
+			<div class="four columns features-content">
+				<div class="ico" style="color:#e74c3c;"><i class="icon-htmlfive"></i></div>
+				<div class="features-info">
+					<h4>HTML5 framework</h4>
+					<p>Designed with the advanced HTML5 foundation framework.</p>
+				</div>
+			</div>
+
+			<div class="four columns features-content">
+				<div class="ico" style="color:#f1c40f;"><i class="icon-theme-style"></i></div>
+				<div class="features-info">
+					<h4>Problems</h4>
+					<p>Please contact support if there any bugs/problems appearing.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Features/services section -->
+
+
+<!-- Team section -->
+<section id="team">
+	<div class="row">
+		<div class="twelve columns">
+			<h3><i class="icon-user"></i>People behind this amazing app!</h3>
+			<div class="three columns team-content">
+				<div class="team-img">	
+					<span></span>
+					<img src="static/demo/clients/1.jpg" alt=""/>
+				</div>
+				<h4>James Wang</h4>
+				<h5>App Developer</h5>
+
+				<!-- Social content -->
+				<ul class="team-social">
+					<li><a href="https://www.instagram.com/jame5_wang/" style="color:#52443c;"><i class="icon-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Team section -->
+
+
+<!-- Contact section -->
+<section id="contact">
+	<div class="row">
+		<div class="twelve columns">
+			<h3><i class="icon-envelope"></i>Contact us.</h3>
+
+			<!-- Contact form -->
+			<div class="six columns">
+				<form id="contactForm" action="static/php/contact.php" method="post">
+					<div class="inner">
+						<i class="icon-useralt"></i>
+						<input name="senderName" id="senderName" required="required" type="text" placeholder="Name" />
+					</div>
+
+					<div class="inner">
+						<i class="icon-envelope"></i>
+						<input type="email" name="senderEmail" id="senderEmail" placeholder="Email address" required="required" />
+					</div>
+
+					<div class="inner">
+						<i class="icon-pencil"></i>
+						<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+					</div>
+
+					<input type="submit" id="sendMessage" name="sendMessage" value="Submit message" />
+				</form>
+				<div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
+				<div id="successMessage" class="successmessage"><p><span class="success-ico"><i class="icon-ok-circle"></i></span> Thanks for sending your message! We'll get back to you shortly.</p></div>
+				<div id="failureMessage" class="errormessage"><p><span class="error-ico"><i class="icon-remove-circle"></i></span> There was a problem sending your message. Please try again.</p></div>
+				<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+			</div>
+
+			<!-- Contact info -->
+			<div class="six columns">
+				<ul class="contact-info">
+					<li><em><i class="icon-homealt"></i></em><span>58 Woodshore Court, CA</span></li>
+					<li><em><i class="icon-emailalt"></i></em><span>atomic5672@gmail.com</span></li>
+					<li><em><i class="icon-link"></i></em><span>www.AI4doctor.app</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Contact section -->
+
+<!-- Footer section -->
+<footer class="footer">
+	<div class="row">
+		<div class="twelve columns footer-inner">
+			<p>&copy; 2023. <a href="#">AI4Doctors</a>. All Rights Reserved.</p>
+		</div>
+	</div>
+</footer>
+<!-- Footer section -->
+
 </body>
 </html>

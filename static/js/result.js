@@ -3,8 +3,10 @@ let resultTable = document.getElementById("resultTable");
 function buildTable(){
     response = JSON.parse(localStorage.getItem("response"));
     console.log(response);
+    console.log(typeof response)
     resultTable.innerHTML = "";
     setHeaders();
+
     for (let row of response[0]) {
         let tr = resultTable.insertRow();
         for (let col of row) {
